@@ -6,14 +6,16 @@
 
 *A minimal, high-performance Arch Linux distribution powered by Hyprland.*
 
+[![Website](https://img.shields.io/badge/Website-smoke--os.github.io-89B4FA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://smoke-os.github.io)
 [![Arch Linux](https://img.shields.io/badge/Base-Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org/)
 [![Hyprland](https://img.shields.io/badge/Compositor-Hyprland-00AAFF?style=for-the-badge&logo=wayland&logoColor=white)](https://hyprland.org/)
 [![Wayland](https://img.shields.io/badge/Display-Wayland-FF6600?style=for-the-badge&logo=wayland&logoColor=white)](https://wayland.freedesktop.org/)
-[![Status](https://img.shields.io/badge/Status-Early%20Alpha-yellow?style=for-the-badge)](https://github.com/SMOKE-OS)
+[![Status](https://img.shields.io/badge/Status-Beta%20v0.1-yellow?style=for-the-badge)](https://github.com/SMOKE-OS/smoke-iso/releases)
 [![License](https://img.shields.io/badge/License-GPLv3%20%2F%20MIT-blue?style=for-the-badge)](https://github.com/SMOKE-OS)
 
 <p align="center">
-  <b>Less clutter. More control. Pure Linux.</b>
+  <b>Less clutter. More control. Pure Linux.</b><br>
+  🌐 <b>Official Website:</b> <a href="https://smoke-os.github.io">https://smoke-os.github.io</a> &nbsp;|&nbsp; 💿 <b>Download ISO:</b> <a href="https://github.com/SMOKE-OS/smoke-iso/releases">v0.1BETA</a>
 </p>
 
 ---
@@ -112,5 +114,7 @@ SMOKE OS is an independent community project and is **not officially affiliated 
 
 **SMOKE OS**  
 *Find clarity in the chaos.*
+
+🌐 [smoke-os.github.io](https://smoke-os.github.io)
 
 </div>
