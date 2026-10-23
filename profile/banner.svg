@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="auto" fill="none">
+  <defs>
+    <!-- Background & gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11111B"/>
+      <stop offset="50%" stop-color="#181825"/>
+      <stop offset="100%" stop-color="#0D0E15"/>
+    </linearGradient>
+
+    <linearGradient id="smoke-cyan-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94E2D5"/>
+      <stop offset="50%" stop-color="#89B4FA"/>
+      <stop offset="100%" stop-color="#CBA6F7"/>
+    </linearGradient>
+
+    <linearGradient id="text-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CDD6F4"/>
+      <stop offset="100%" stop-color="#89B4FA"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="ambient-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" result="blur"/>
+    </filter>
+    <filter id="logo-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="glow"/>
+      <feComposite in="SourceGraphic" in2="glow" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="900" height="220" rx="16" fill="url(#bg-grad)" stroke="#313244" stroke-width="1.5"/>
+
+  <!-- Ambient Smoky Orbs -->
+  <circle cx="150" cy="110" r="80" fill="#89B4FA" opacity="0.12" filter="url(#ambient-blur)"/>
+  <circle cx="780" cy="90" r="110" fill="#CBA6F7" opacity="0.08" filter="url(#ambient-blur)"/>
+  <circle cx="450" cy="180" r="90" fill="#94E2D5" opacity="0.06" filter="url(#ambient-blur)"/>
+
+  <!-- Left: Stylized SMOKE Logo Symbol -->
+  <g transform="translate(60, 45)">
+    <!-- Shield / Square Backdrop -->
+    <rect width="130" height="130" rx="28" fill="#181825" stroke="#313244" stroke-width="2"/>
+    
+    <!-- Flowing S Stream -->
+    <path d="M 88 42 C 84 32 66 28 50 34 C 34 40 34 56 48 62 C 62 68 84 68 86 86 C 88 102 68 110 50 106 C 36 104 32 96 32 88" 
+          stroke="url(#smoke-cyan-blue)" 
+          stroke-width="10" 
+          stroke-linecap="round" 
+          filter="url(#logo-glow)"/>
+    
+    <!-- Ambient Sparks -->
+    <circle cx="92" cy="28" r="4" fill="#89B4FA" opacity="0.8"/>
+    <circle cx="102" cy="38" r="2.5" fill="#94E2D5" opacity="0.6"/>
+    <circle cx="36" cy="118" r="3" fill="#CBA6F7" opacity="0.7"/>
+  </g>
+
+  <!-- Right: Typography & Tagline -->
+  <g transform="translate(230, 0)">
+    <!-- Title -->
+    <text x="0" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="url(#text-glow)" letter-spacing="1.5">
+      SMOKE <tspan fill="#89B4FA">OS</tspan>
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="19" fill="#CDD6F4">
+      Less clutter. More control. Pure Linux.
+    </text>
+
+    <!-- Tech Pills -->
+    <text x="0" y="160" font-family="'JetBrains Mono', monospace, -apple-system" font-weight="500" font-size="13" fill="#A6ADC8" letter-spacing="0.5">
+      Arch Linux Base  <tspan fill="#89B4FA">•</tspan>  Hyprland Wayland  <tspan fill="#89B4FA">•</tspan>  Quickshell Desktop  <tspan fill="#89B4FA">•</tspan>  ~340MB RAM
+    </text>
+  </g>
+
+  <!-- Top Right Release Badge -->
+  <g transform="translate(740, 28)">
+    <rect width="130" height="28" rx="14" fill="#89B4FA" fill-opacity="0.12" stroke="#89B4FA" stroke-opacity="0.35" stroke-width="1"/>
+    <circle cx="18" cy="14" r="4" fill="#A6E3A1"/>
+    <text x="32" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#89B4FA">v0.1BETA LIVE</text>
+  </g>
+</svg>
